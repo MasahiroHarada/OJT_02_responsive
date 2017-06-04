@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Bungee');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    background: #c4d344;
+}
+
+header {
+    padding: 0 2%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #e43227;
+    color: white;
+}
+
+footer {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #06b1d3;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 2% 4rem;
+}
+
+ul, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+/**
+ * Panels
+ */
+.panel {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.panel-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.panel-header i {
+    margin-right: .5em;
+    font-size: 1.5rem;
+    color: #e21c90;
+}
+
+/**
+ * List items common styles
+ */
+.album-item, .song-item, .video-item {
+    list-style: none;
+}
+
+.song-item:last-child, .video-item:last-child {
+    border-bottom: 0;
+}
+
+.song-item, .video-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/**
+ * Songs
+ */
+.song-item {
+    display: flex;
+}
+
+.song-item .image-box {
+    padding-right: 1rem;
+    flex: 1;
+}
+
+.song-item .image-box img {
+    width: 100%;
+}
+
+.song-item dl {
+    flex: 1;
+}
+
+.song-item dt {
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.song-item dd p {
+    margin: .5rem 0 0;
+}
+
+/**
+ * Videos
+ */
+.video-item iframe {
+    width: 100%;
+}
+
+.video-item .embed {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0 0 56.25%;
+    overflow: hidden;
+}
+
+.video-item .embed iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/**
+ * Albums
+ */
+.albums {
+    padding-top: 1rem;
+}
+
+.albums::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.album-item {
+    margin-bottom: 2rem;
+}
+
+.album-item img {
+    width: 100%;
+}
