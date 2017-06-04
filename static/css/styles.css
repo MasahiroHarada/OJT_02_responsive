@@ -163,3 +163,37 @@ h1 {
 .album-item img {
     width: 100%;
 }
+
+/**
+ * Desktop Layouts
+ */
+@media (min-width: 768px) {
+    article {
+        float: left;
+        width: 60%;
+    }
+
+    aside {
+        float: right;
+        width: 35%;
+    }
+
+    main::after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+@media (min-width: 576px) {
+    .album-item {
+        width: 30%;
+        float: left;
+        margin-bottom: 2rem;
+    }
+
+    .album-item:nth-child(3n+2) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
